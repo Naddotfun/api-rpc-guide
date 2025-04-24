@@ -64,7 +64,6 @@ The repository includes the following ABI files:
 - `IUniswapV2Router.json` - DEX router interface
 - `IUniswapV2Factory.json` - DEX factory interface
 - `IUniswapV2Pair.json` - DEX pair interface
-- `ILock.json` - Token locking interface
 
 ### Using the ABI Files
 
