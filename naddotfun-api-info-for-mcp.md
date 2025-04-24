@@ -1,4 +1,4 @@
-# Nad.fun API Documentation for MCP
+# Nad.fun API Information for MCP
 
 ## Overview
 

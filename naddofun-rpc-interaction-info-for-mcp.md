@@ -1,4 +1,4 @@
-# Nad.fun Blockchain Interaction Guide for MCP
+# Nad.fun RPC Interaction Information for MCP
 
 ## Overview
 
@@ -74,57 +74,6 @@ Import the ABI files in your TypeScript code:
 import * as NadFunAbi from "contract-abi";
 
 // Example usage
-const coreAbi = NadFunAbi.ICore;
-const tokenAbi = NadFunAbi.IToken;
-const routerAbi = NadFunAbi.IUniswapV2Router;
-```
-
-## 컨트랙트 ABI
-
-Nad.fun 컨트랙트와 상호작용하기 위해서는 적절한 ABI(Application Binary Interface) 파일이 필요합니다. 이 파일들은 공식 Nad.fun contract-abi 저장소에서 제공됩니다.
-
-### ABI 패키지 설치하기
-
-프로젝트의 `package.json`에 다음 내용을 추가하세요:
-
-```json
-"dependencies": {
-  "contract-abi": "https://github.com/Naddotfun/contract-abi.git#v0.3.0",
-  // 기타 의존성
-}
-```
-
-그런 다음 선호하는 패키지 관리자를 사용하여 설치하세요:
-
-```bash
-npm install
-# 또는
-yarn install
-# 또는
-pnpm install
-```
-
-### 사용 가능한 ABI 파일
-
-저장소에는 다음과 같은 ABI 파일이 포함되어 있습니다:
-
-- `ICore.json` - 본딩 커브 상호작용을 위한 코어 컨트랙트
-- `IToken.json` - ERC-20 토큰 인터페이스
-- `IBondingCurve.json` - 본딩 커브 컨트랙트 인터페이스
-- `IBondingCurveFactory.json` - 본딩 커브 생성을 위한 팩토리
-- `IUniswapV2Router.json` - DEX 라우터 인터페이스
-- `IUniswapV2Factory.json` - DEX 팩토리 인터페이스
-- `IUniswapV2Pair.json` - DEX 페어 인터페이스
-- `ILock.json` - 토큰 잠금 인터페이스
-
-### ABI 파일 사용하기
-
-TypeScript 코드에서 ABI 파일을 가져오세요:
-
-```typescript
-import * as NadFunAbi from "contract-abi";
-
-// 사용 예시
 const coreAbi = NadFunAbi.ICore;
 const tokenAbi = NadFunAbi.IToken;
 const routerAbi = NadFunAbi.IUniswapV2Router;
